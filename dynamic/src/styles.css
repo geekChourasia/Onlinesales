@@ -1,0 +1,123 @@
+/* Center the form vertically and horizontally */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  
+  /* Container styles */
+  .container {
+    width: 90%;
+    max-width: 800px; /* Adjust the maximum width as needed */
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    text-align: left; /* Align form elements to the left */
+    color: #333; /* Set text color for the container */
+  }
+  
+  /* Styles for buttons */
+  .button-primary {
+    background-color: #007bff;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .button-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .button-success {
+    background-color: #28a745;
+    color: #fff;
+    font-size: 18px;
+  }
+  
+  .button-danger {
+    background-color: #dc3545;
+    color: #fff;
+    font-size: 12px;
+  }
+  
+  .button-warning {
+    background-color: #ffc107;
+    color: #000;
+    font-size: 18px;
+  }
+  
+  .button-load-config {
+    background-color: #6c757d;
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 10px 10px 10px 0; /* Adjust margin for spacing between buttons */
+    font-size: 18px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    filter: brightness(90%);
+  }
+  
+  /* Styles for input fields and labels */
+  input[type="text"],
+  select {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: #f8f8f8; /* Change the background color */
+    color: #333; /* Set text color for input fields */
+  }
+  
+  /* Make field type and label input have the same width */
+  label {
+    width: 30%;
+    display: inline-block;
+    text-align: left; /* Align labels to the left */
+    margin-right: 10px;
+    font-size: 18px;
+    background-color: #f8f8f8; /* Change the background color */
+    color: #333; /* Set text color for labels */
+  }
+  
+  input[type="text"] {
+    width: 65%;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .container {
+      width: 95%;
+    }
+  
+    /* Adjust styles for smaller screens here */
+    button {
+      font-size: 16px;
+    }
+  
+    /* Reset width for smaller screens */
+    label,
+    input[type="text"] {
+      width: 100%;
+      display: block;
+      margin-right: 0;
+    }
+  }
+  
